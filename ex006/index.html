@@ -14,19 +14,18 @@
     </header>
     <main>
         <section>
-            <div class="quadrado">
+            <div class="container">
                 <form action="dados.php" method="post">
-                        <div class="info">Ano de Nascimento: <input type="number" name="ano" id="ano" min="1900" max="2024" value="2005"></div>
-                        <div class="info">Sexo:
-                            <label for="masculino">Masculino</label> <input type="radio" name="sexo" id="masculino"  checked>
-                            <label for="feminino">Feminino</label> <input type="radio" name="sexo" id="feminino" >
-                        </div>
-                        <div class="info"> <input type="button" value="Enviar" onclick="dados()"></div>
-                    
+                    <div class="info">Ano de Nascimento: <input type="number" name="ano" id="ano" min="1900" max="2027"
+                            value="2005"></div>
+                    <div class="info">Sexo:
+                        <label for="masculino">Masculino</label> <input type="radio" name="sexo" id="masculino" checked>
+                        <label for="feminino">Feminino</label> <input type="radio" name="sexo" id="feminino">
+                    </div>
+                    <div class="info"> <input type="button" value="Enviar" onclick="dados()"></div>
+                    <div id="resposta" class="info"> Preencha as informações para mostrarmos qual sua idade! </div>
+    
                 </form>
-            </div>
-            <div class="quadrado">
-                <p id="resposta"></p>
             </div>
         </section>
     </main>
